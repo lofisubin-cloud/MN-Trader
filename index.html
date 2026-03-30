@@ -109,7 +109,24 @@ footer {
 }
 </style>
 </head>
+</footer>
 
+<!-- DAILY SIGNALS -->
+<div class="section">
+  <h2>📊 Daily Signals</h2>
+
+  <button onclick="showChart()">View Today’s Chart</button>
+
+  <div id="chartBox" style="display:none; margin-top:20px;">
+    <img src="images/chart1.png" width="100%">
+  </div>
+</div>
+
+<script>
+function showChart() {
+  document.getElementById("chartBox").style.display = "block";
+}
+</script>
 <body>
 
 <nav>
