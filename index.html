@@ -140,11 +140,30 @@ function showChart() {
 <div class="section">
   <h1>What You Get</h1>
   
-  <div class="cards">
-    <div class="card">
-      <h3>📈 Daily Signals</h3>
-      <p>Accurate forex & crypto trading signals</p>
-    </div>
+  <div class="card" onclick="openChart()">
+  <h3>📈 Daily Signals</h3>
+  <p>Accurate forex & crypto trading signals</p>
+</div>
+
+<!-- Image Popup -->
+<div id="chartPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black;">
+  
+  <span onclick="closeChart()" style="position:absolute; top:20px; right:30px; font-size:30px; cursor:pointer; color:white;">✖</span>
+
+  <img src="images/chart1.png" 
+       style="width:90%; max-width:800px; margin:80px auto; display:block;">
+</div>
+
+<script>
+function openChart() {
+  document.getElementById("chartPopup").style.display = "block";
+}
+
+function closeChart() {
+  document.getElementById("chartPopup").style.display = "none";
+}
+</script>
+
     <div class="card">
       <h3>📊 Chart Analysis</h3>
       <p>Professional daily chart breakdown</p>
