@@ -111,20 +111,6 @@ footer {
 </head>
 </footer>
 
-<!-- DAILY SIGNALS -->
-<div class="section">
-  <h2>📊 Daily Signals</h2>
-
-  <button onclick="showChart()">View Today’s Chart</button>
-
-  <div id="chartBox" style="display:none; margin-top:20px;">
-    <img src="images/chart1.png" width="100%">
-  </div>
-</div>
-
-<script>
-  </body>
-</html>
 function showChart() {
   document.getElementById("chartBox").style.display = "block";
 }
@@ -156,9 +142,20 @@ function showChart() {
 
   <div class="cards">
     <div class="card">
-      <h3>📈 Daily Signals</h3>
-      <p>Accurate forex & crypto trading signals</p>
-    </div>
+      <!-- DAILY SIGNALS -->
+<div class="section">
+  <h2>📊 Daily Signals</h2>
+
+  <button onclick="showChart()">View Today’s Chart</button>
+
+  <div id="chartBox" style="display:none; margin-top:20px;">
+    <img src="images/chart1.png" width="100%">
+  </div>
+</div>
+
+<script>
+  </body>
+</html>
     <div class="card">
       <h3>📊 Chart Analysis</h3>
       <p>Professional daily chart breakdown</p>
